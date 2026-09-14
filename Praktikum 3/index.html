@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - 535250129</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        
+        <!-- Form Input -->
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Keterangan pengeluaran" required>
+            <input type="number" id="expense-amount" placeholder="Nominal (Rp)" required>
+            <button type="submit">Tambah</button>
+        </form>
+
+        <!-- Histori Pengeluaran -->
+        <div class="summary">
+            <p>Total Transaksi: <span id="total-count">0</span></p>
+            <p>Total Pengeluaran: Rp <span id="total-amount">0</span></p>
+        </div>
+
+        <!-- Daftar Pengeluaran -->
+        <ul id="expense-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
